@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lvItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnAddItem"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/teal_700"
+        android:divider="@color/fireBrick"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/fireBrick"
+
+
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/etNewItem"
+
+
+        android:hint = "Enter an Event to do"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf = "@id/btnAddItem"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/darkViolet"
+        android:text="Add an item" />
+
+
+
+
+
+</RelativeLayout>
